@@ -54,6 +54,7 @@
     </header>
 
     <main>
+
       <section class="slider">
         <h1 class="visually-hidden">Слайдер-лист</h1>
         <div class="slider-content">
@@ -63,7 +64,7 @@
             Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="#" class="slider-content-about">Подробнее</a>
+          <a href="#" class="btn slider-content-about">Подробнее</a>
           <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
@@ -90,7 +91,7 @@
             Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="slider-content-about">Подробнее</a>
+          <a href="#" class="btn slider-content-about">Подробнее</a>
           <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
@@ -113,7 +114,7 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="slider-content-about">Подробнее</a>
+          <a href="#" class="btn slider-content-about">Подробнее</a>
           <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
@@ -132,6 +133,7 @@
           <img src="#" class="slider-pic-3" width="400" height="500" alt="Slider picture">
         </div>
       </section>
+
       <nav class="popular-nav">
         <h1 class="visually-hidden">Популярные категории</h1>
         <ul class="popular-nav-menu">
@@ -168,13 +170,14 @@
           </li>
         </ul>
       </nav>
+
       <section class="features">
         <h1 class="visually-hidden">Наши достоинства</h1>
         <nav class="features-nav">
           <ul class="features-nav-list">
-            <li class="features-nav-list-item-active">Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li class="btn features-nav-list-item-active">Доставка</li>
+            <li class="btn">Гарантия</li>
+            <li class="btn">Кредит</li>
           </ul>
         </nav>
         <div class="feature-content show">
@@ -198,15 +201,53 @@
           </p>
         </div>
       </section>
+
       <section class="vendors">
         <h1 class="visually-hidden">Основные поставщики</h1>
+        <ul class="vendors-list">
+          <li>DJI</li>
+          <li>SP GADGETS</li>
+          <li>GoPro</li>
+          <li>VIVE</li>
+        </ul>
       </section>
+
       <section class="about-us">
-
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul class="delivery-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn">Подробнее о нас</a>
       </section>
+
       <section class="contacts">
-
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <img src="#" alt="We're on the map">
+        <a href="#" class="btn">Напишите нам</a>
+        <div class="map"></div>
+        <div class="contacts-form">
+          <form action="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуста">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            <input type="submit" class="btn" value="Отправить">
+          </form>
+        </div>
       </section>
+
     </main>
 
     <footer>
