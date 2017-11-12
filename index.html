@@ -6,15 +6,16 @@
   </head>
   <body>
 
-    <header>
-      <h1 class="visually-hidden">Главное меню</h1>
+    <header class="main-header">
+      <h1 class="visually-hidden">Главная страница магазина гаджетов "Девайс"</h1>
+      <h2 class="visually-hidden">Главное меню</h2>
       <b class="logo">DEVICE</b>
       <nav class="main-nav">
         <ul class="user-menu">
           <li>
             <form action="get" class="user-menu-search">
               <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <input type="submit">
+              <input type="submit" value="Найти">
             </form>
           </li>
           <li>
@@ -50,13 +51,14 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <!-- Линию, наверное, лучше сделать через ::after -->
     </header>
 
     <main>
+      <!-- Линию сделать через ::before -->
       <section class="slider">
-        <h1 class="visually-hidden">Слайдер-лист</h1>
+        <h2 class="visually-hidden">Хиты продаж</h2>
         <div class="slider-content">
+          <img src="#" class="slider-pic-1" width="400" height="500" alt="Slider picture">
           <h2>Делай селфи,<br>как Бен Стиллер!</h2>
           <b class="slider-content-number">01</b>
           <p class="slider-content-about">
@@ -64,26 +66,26 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <a href="#" class="btn slider-content-about">Подробнее</a>
-          <ul class="slider-content-nav">
+          <!-- <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
-          </ul>
+          </ul> -->
           <table class="slider-content-features">
-            <th>
+            <tr>
               <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
-            </th>
+            </tr>
             <tr>
               <td>Длина палки</td>
               <td>Вес палки</td>
               <td>Материал</td>
             </tr>
           </table>
-          <img src="#" class="slider-pic-1" width="400" height="500" alt="Slider picture">
         </div>
         <div class="slider-content">
+          <img src="#" class="slider-pic-2" width="400" height="500" alt="Slider picture">
           <h2>Худеем<br>правильно!</h2>
           <b class="slider-content-number">02</b>
           <p class="slider-content-about">
@@ -91,22 +93,22 @@
             не пропускать занятия и соблюдать диету.
           </p>
           <a href="#" class="btn slider-content-about">Подробнее</a>
-          <ul class="slider-content-nav">
+          <!-- <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
-          </ul>
+          </ul> -->
           <table class="slider-content-features">
-            <th>
+            <tr>
               <td>48 часов</td>
-            </th>
+            </tr>
             <tr>
               <td>Без подзараядки</td>
             </tr>
           </table>
-          <img src="#" class="slider-pic-2" width="400" height="500" alt="Slider picture">
         </div>
         <div class="slider-content">
+          <img src="#" class="slider-pic-3" width="400" height="500" alt="Slider picture">
           <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
           <b class="slider-content-number">03</b>
           <p class="slider-content-about">
@@ -114,27 +116,26 @@
             мощным лазером, замаскированным под стандартную камеру.
           </p>
           <a href="#" class="btn slider-content-about">Подробнее</a>
-          <ul class="slider-content-nav">
+          <!-- <ul class="slider-content-nav">
             <li><a href="#" class="slider-content-nav-item-current"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
             <li><a href="#" class="slider-content-nav-item"></a></li>
-          </ul>
+          </ul> -->
           <table class="slider-content-features">
-            <th>
+            <tr>
               <td>800 м</td>
               <td>50 м</td>
-            </th>
+            </tr>
             <tr>
               <td>Дальность полета</td>
               <td>Радиус поражения</td>
             </tr>
           </table>
-          <img src="#" class="slider-pic-3" width="400" height="500" alt="Slider picture">
         </div>
       </section>
 
-      <nav class="popular-nav">
-        <h1 class="visually-hidden">Популярные категории</h1>
+      <section class="popular-nav">
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="popular-nav-menu">
           <li class="popular-nav-menu-item">
             <a href="#">
@@ -168,10 +169,10 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </section>
 
       <section class="features">
-        <h1 class="visually-hidden">Наши достоинства</h1>
+        <h2 class="visually-hidden">Наши достоинства</h2>
         <nav class="features-nav">
           <ul class="features-nav-list">
             <li class="btn features-nav-list-item-active">Доставка</li>
@@ -202,7 +203,7 @@
       </section>
 
       <section class="vendors">
-        <h1 class="visually-hidden">Основные поставщики</h1>
+        <h2 class="visually-hidden">Основные поставщики</h2>
         <ul class="vendors-list">
           <li>DJI</li>
           <li>SP GADGETS</li>
@@ -234,11 +235,11 @@
         </p>
         <img src="#" alt="We're on the map">
         <a href="#" class="btn">Напишите нам</a>
-        <div class="map"></div>
+        <a href="#" class="map"><img src="img/map.jpg" alt="Мы на карте"></a>
         <div class="contacts-form">
           <form action="post">
             <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуста">
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
             <label for="email">Ваш e-mail:</label>
             <input type="email" name="email" id="email" placeholder="Для отправки ответа">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
@@ -248,7 +249,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <b class="logo">DEVICE</b>
         <ul class="footer-user-menu">
           <li><a href="#">Войти</a></li>
@@ -263,9 +264,9 @@
         </ul>
         <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
         <ul class="footer-social">
-          <li><a href="#">fb</a></li>
-          <li><a href="#">in</a></li>
-          <li><a href="#">tw</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twitter</a></li>
         </ul>
         <a href="#" class="made-by">Html Academy</a>
     </footer>
