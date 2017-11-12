@@ -66,21 +66,61 @@
           <h3>Фильтр:</h3>
         </div>
         <form action="get">
-          <label for="filter-price">Стоиимость</label>
-          <input type="range" name="price" id="price" min="0" max="10000" step="100">
-          <label for="color">Цвет</label>
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            <div>
+              <input type="range" name="price" id="price" min="0" max="10000" step="100">
+            </div>
+          </fieldset>
+          <!-- <label for="filter-price">Стоимость</label>
+          <input type="range" name="price" id="price" min="0" max="10000" step="100"> -->
+          <fieldset class="filter-color">
+            <legend>Цвет</legend>
+            <div>
+              <input type="checkbox" name="color" id="color-black" value="black">
+              <label for="color-black">Черный</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" id="color-white" value="white">
+              <label for="color-white">Белый</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" id="color-blue" value="blue">
+              <label for="color-blue">Синий</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" id="color-red" value="red">
+              <label for="color-red">Красный</label>
+            </div>
+            <div>
+              <input type="checkbox" name="color" id="color-pink" value="pink">
+              <label for="color-pink">Розовый</label>
+            </div>
+          </fieldset>
+          <!-- <label for="color">Цвет</label>
           <select name="color" id="color" multiple>
             <option value="black">Черный</option>
             <option value="white">Белый</option>
             <option value="blue">Синий</option>
             <option value="red">Красный</option>
             <option value="pink">Розовый</option>
-          </select>
-          <label for="bluetooth">Bluetooth</label>
+          </select> -->
+          <fieldset class="filter-bluetooth">
+            <legend>Bluetooth</legend>
+            <div>
+              <input type="checkbox" name="bluetooth" id="bluetooth-yes" value="1">
+              <label for="bluetooth">Есть</label>
+            </div>
+            <div>
+              <input type="checkbox" name="bluetooth" id="bluetooth-no" value="0">
+              <label for="bluetooth">Нет</label>
+            </div>
+          </fieldset>
+          <!-- <label for="bluetooth">Bluetooth</label>
           <select name="bluetooth" id="bluetooth">
             <option value="1">Есть</option>
             <option value="0">Нет</option>
-          </select>
+          </select> -->
           <input type="submit" class="btn">
         </form>
       </section>
