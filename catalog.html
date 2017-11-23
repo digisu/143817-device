@@ -7,24 +7,28 @@
   <body>
 
     <header class="main-header">
-      <h1 class="visually-hidden">Главное меню</h1>
+      <h1 class="visually-hidden">Главная страница магазина гаджетов "Девайс"</h1>
       <b class="logo">DEVICE</b>
       <nav class="main-nav">
         <ul class="user-menu">
           <li>
             <form action="get" class="user-menu-search">
+              <!-- <img src="img/decor/header-search.svg" alt="Поиск"> -->
               <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <input type="submit" value="Найти">
+              <input type="submit" value="Найти" class="btn-search">
             </form>
           </li>
           <li>
+            <!-- <img src="img/decor/header-user.svg" alt="Пользователь"> -->
             <b class="user-name">Валентин Петухов</b>
             <a href="#">Выйти</a>
           </li>
           <li>
+            <!-- <img src="img/decor/header-compare.svg" alt="Сравнить"> -->
             <a href="#">Сравнить</a>
           </li>
           <li>
+            <!-- <img src="img/decor/header-cart.svg" alt="Корзина"> -->
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -57,12 +61,12 @@
       <h2>Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li><a href="#">Главная</a></li>
-        <li><a href="">Каталог товаров</a></li>
-        <li>Моноподы для селфи</li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a>Моноподы для селфи</a></li>
       </ul>
 
       <section class="filter">
-        <div class="filter-haeder">
+        <div class="filter-header">
           <h3>Фильтр:</h3>
         </div>
         <form action="get">
@@ -109,11 +113,11 @@
             <legend>Bluetooth</legend>
             <div>
               <input type="checkbox" name="bluetooth" id="bluetooth-yes" value="1">
-              <label for="bluetooth">Есть</label>
+              <label for="bluetooth-yes">Есть</label>
             </div>
             <div>
               <input type="checkbox" name="bluetooth" id="bluetooth-no" value="0">
-              <label for="bluetooth">Нет</label>
+              <label for="bluetooth-no">Нет</label>
             </div>
           </fieldset>
           <!-- <label for="bluetooth">Bluetooth</label>
@@ -133,67 +137,87 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
           </ul>
-          <p class="sort-dir">
+          <div class="sort-dir">
             <a href="#" class="sort-up">up</a>
             <a href="#" class="sort-down sort-active">down</a>
-          </p>
+          </div>
         </div>
 
         <ul class="result-show">
           <li>
-            <img src="img/item-1.jpg" alt="">
+            <div class="result-show-img">
+              <img src="img/item-1.jpg" alt="Любительская селфи-палка">
+            </div>
             <b>Любительская селфи-палка</b>
             <span>500 руб.</span>
           </li>
           <li>
-            <img src="img/item-2.jpg" alt="">
-            <b>Профессиональная селфи-палка </b>
+            <div class="result-show-img">
+              <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
+            </div>
+            <b>Профессиональная селфи-палка</b>
             <span>1500 руб.</span>
           </li>
           <li>
-            <img src="img/item-3.jpg" alt="">
+            <div class="result-show-img">
+              <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
+            </div>
             <b>Непотопляемая селфи-палка</b>
             <span>2500 руб.</span>
           </li>
           <li>
-            <img src="img/item-4.jpg" alt="">
+            <div class="result-show-img">
+              <img src="img/item-4.jpg" alt="Селфи-палка 'Следуй за мной'">
+            </div>
             <b>Селфи-палка «Следуй за мной»</b>
             <span>4900 руб.</span>
           </li>
         </ul>
 
         <nav class="filter-result-pagination">
-          <b>назад</b>
+          <b><a href="#">назад</a></b>
           <ul>
-            <li class="filter-result-pagination-active">1</li>
-            <li>2</li>
-            <li>3</li>
+            <li><a class="filter-result-pagination-active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
-          <b>Вперед</b>
+          <b><a href="#">вперед</a></b>
         </nav>
       </section>
     </main>
 
     <footer class="main-footer">
-      <b class="logo">DEVICE</b>
-      <ul class="footer-user-menu">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-      <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-features">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Контакты</li>
-      </ul>
-      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-      <ul class="footer-social">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">twitter</a></li>
-      </ul>
-      <a href="#" class="made-by">Html Academy</a>
+        
+      <div class="left">
+        <b class="logo">DEVICE</b>
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+      </div>
+
+      <div class="middle">
+        <ul class="footer-features">
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Контакты</li>
+        </ul>
+        <ul class="footer-social">
+          <!-- Картинки фоном -->
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <ul class="footer-user-menu">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+        <!-- Картинка фоном -->
+        <a href="#" class="made-by">Html Academy</a>
+      </div>
+
     </footer>
 
   </body>
