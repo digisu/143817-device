@@ -15,3 +15,246 @@ body{
 .visually-hidden{
     display: none;
 }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    font-size: 47px;
+    line-height: 55px;
+}
+
+button{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+
+.logo{
+    font-size: 48px;
+    line-height: 60px;
+}
+.user-menu{
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    display: flex;
+}
+.catalog-menu{
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+}
+.catalog-modal{
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    display: flex;
+}
+
+.main-header a:hover{
+    color: rgba(0,0,0,0.6);
+}
+.main-header a:focus{
+    color: rgba(0,0,0,0.3);
+}
+
+
+/* SLIDER */
+
+
+.slider{
+    width: 1120px;
+}
+.slider-item{
+    display: flex;
+}
+.slider-img{
+    width: 560px;
+}
+.slider-description{
+    width: 560px;
+    position: relative;
+}
+.slider-description-number{
+    position: absolute;
+    color: #fff;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    top: -20px;
+    right: -60px;
+}
+.slider-description-about{
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+.btn-about{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-top: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+}
+.btn-about:hover,
+.btn-about:focus{
+    background-color: #f0c52e;
+}
+.btn-about:focus{
+    color: rgba(0,0,0,0.3);
+}
+
+.slider-description-features tr:first-child{
+    font-size: 36px;
+}
+.slider-description-features tr:last-child{
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 13px;
+    color: #464646;
+}
+
+
+/* CATEGORIES */
+
+
+.categories-menu{
+    display: flex;
+    justify-content: space-around;
+}
+h3{
+    font-size: 18px;
+    line-height: 20px;
+}
+.categories-menu a{
+    display: block;
+}
+.categories-menu-item a::before{
+    content: "";
+    display: table;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.categories-menu li:first-child a::before{
+    background-image: url('../img/decor/popular-1.svg');
+}
+.categories-menu li:nth-child(2) a::before{
+    background-image: url('../img/decor/popular-2.svg');
+    background-position: 50% 100%;
+}
+.categories-menu li:nth-child(3) a::before{
+    background-image: url('../img/decor/popular-3.svg');
+}
+.categories-menu li:nth-child(4) a::before{
+    background-image: url('../img/decor/popular-4.svg');
+}
+.categories-menu li:nth-child(5) a::before{
+    background-image: url('../img/decor/popular-5.svg');
+}
+.categories-menu li:last-child a::before{
+    background-image: url('../img/decor/popular-6.svg');
+}
+
+.categories-menu-item a:hover::before{
+    background-color: #f0c52e;
+}
+/* фокусить пока не выходит. скорее всего придется что-то изобретать с дивами дополнительно */
+
+
+/* FEATURES */
+
+
+.features{
+    display: flex;
+}
+.features-nav{
+    /* box-sizing: border-box; */
+    width: 277px;
+    height: 320px;
+    border-right: 6px solid #000;
+    margin-right: 117px;
+}
+.feature-content{
+    display: none;
+}
+.feature-content.show{
+    display: block;
+    width: 460px;
+    padding-right: 300px;
+}
+.feature-content p{
+    font-family: OpenSans, Arial, sans-serif;
+}
+.feature-content-1{
+    background-image: url('../img/decor/services-delivery.svg');
+    background-repeat: no-repeat;
+    background-position: 560px 85px;
+}
+.feature-content-2{
+    background-image: url('../img/decor/services-warranty.svg');
+    background-repeat: no-repeat;
+    background-position: 560px 85px;
+}
+.feature-content-3{
+    background-image: url('../img/decor/services-credit.svg');
+    background-repeat: no-repeat;
+    background-position: 560px 85px;
+}
+.btn{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-top: 1px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+}
+
+
+/* VENDORS */
+
+.vendors-list{
+    display: flex;
+    justify-content: space-around;
+}
+.vendors-list img{
+    filter: saturate(0);
+    opacity: 0.2;
+}
+.vendors-list img:hover{
+    filter: saturate(1);
+    opacity: 1;
+}
+
+
+/* ABOUT AND CONTACTS */
+.about-and-contacts{
+    display: flex;
+}
