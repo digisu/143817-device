@@ -115,9 +115,15 @@ button{
   margin-top: -110px;
 }
 
-.slider-item{
+/* .slider-item{
     display: flex;
-    /* flex-basis: 560px; */
+} */
+
+.slider-item{
+  display: none;
+}
+.slider-item.show{
+  display: flex;
 }
 
 .slider-img{
@@ -127,7 +133,7 @@ button{
 }
 
 .slider-description{
-    flex-grow: 1;
+    width: 640px;
     position: relative;
     padding-top: 40px;
 }
@@ -141,12 +147,16 @@ button{
   top: 35px;
   left: 0;
 }
+.slider-description h2{
+  z-index: 20;
+}
+
 .slider-description-number{
     position: absolute;
     color: #fff;
     font-size: 179.2px;
     line-height: 179.2px;
-    top: -15px;
+    top: -12px;
     right: 60px;
 }
 .slider-description-about{
