@@ -1,6 +1,6 @@
 @font-face{
     font-family: Gilroy;
-    src: url(fonts/gilroy-extrabold-webfont.woff2);
+    src: url(../fonts/gilroy-extrabold-webfont.woff2);
 }
 
 body{
@@ -127,13 +127,14 @@ button{
 }
 
 .slider-img{
-    width: 560px;
+    min-width: 560px;
     text-align: center;
     z-index: 1;
 }
 
 .slider-description{
-    width: 640px;
+    /* width: 640px; */
+    flex-grow: 1;
     position: relative;
     padding-top: 40px;
 }
@@ -148,52 +149,53 @@ button{
   left: 0;
 }
 .slider-description h2{
-  z-index: 20;
+  position: relative;
+  z-index: 2;
 }
 
 .slider-description-number{
-    position: absolute;
-    color: #fff;
-    font-size: 179.2px;
-    line-height: 179.2px;
-    top: -12px;
-    right: 60px;
+  position: absolute;
+  color: #fff;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  top: -12px;
+  right: 60px;
 }
 .slider-description-about{
-    font-family: OpenSans, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    color: #464646;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
 }
 .btn-about{
-    cursor: pointer;
-    box-sizing: border-box;
-    padding-top: 5px;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    width: 220px;
-    height: 40px;
-    background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 220px;
+  height: 40px;
+  background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 }
 .btn-about:hover,
 .btn-about:focus{
-    background-color: #f0c52e;
+  background-color: #f0c52e;
 }
 .btn-about:focus{
-    color: rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.3);
 }
 
 .slider-description-features tr:first-child{
-    font-size: 36px;
+  font-size: 36px;
 }
 .slider-description-features tr:last-child{
-    font-family: OpenSans, Arial, sans-serif;
-    font-size: 13px;
-    color: #464646;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  color: #464646;
 }
 
 
@@ -201,47 +203,66 @@ button{
 
 
 .categories-menu{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 h3{
-    font-size: 18px;
-    line-height: 20px;
+  font-size: 18px;
+  line-height: 20px;
 }
 .categories-menu a{
-    display: block;
+  display: block;
+}
+.categories-menu-item{
+  position: relative;
 }
 .categories-menu-item a::before{
-    content: "";
-    display: table;
-    width: 160px;
-    height: 160px;
-    background-color: #f7e296;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  content: "";
+  display: table;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-.categories-menu li:first-child a::before{
-    background-image: url('../img/decor/popular-1.svg');
+.categories-menu-item a::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: table;
+  width: 160px;
+  height: 160px;
+  /* background-color: #f7e296; */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-.categories-menu li:nth-child(2) a::before{
-    background-image: url('../img/decor/popular-2.svg');
-    background-position: 50% 100%;
+.categories-menu li:first-child a::after{
+  background-image: url('../img/decor/popular-1.svg');
 }
-.categories-menu li:nth-child(3) a::before{
-    background-image: url('../img/decor/popular-3.svg');
+.categories-menu li:nth-child(2) a::after{
+  background-image: url('../img/decor/popular-2.svg');
+  background-position: 50% 100%;
 }
-.categories-menu li:nth-child(4) a::before{
-    background-image: url('../img/decor/popular-4.svg');
+.categories-menu li:nth-child(3) a::after{
+  background-image: url('../img/decor/popular-3.svg');
 }
-.categories-menu li:nth-child(5) a::before{
-    background-image: url('../img/decor/popular-5.svg');
+.categories-menu li:nth-child(4) a::after{
+  background-image: url('../img/decor/popular-4.svg');
 }
-.categories-menu li:last-child a::before{
-    background-image: url('../img/decor/popular-6.svg');
+.categories-menu li:nth-child(5) a::after{
+  background-image: url('../img/decor/popular-5.svg');
+}
+.categories-menu li:last-child a::after{
+  background-image: url('../img/decor/popular-6.svg');
 }
 
 .categories-menu-item a:hover::before{
-    background-color: #f0c52e;
+  background-color: #f0c52e;
+}
+.categories-menu-item a:focus h3,
+.categories-menu a:focus::after{
+  opacity: 0.5;
 }
 /* фокусить пока не выходит. скорее всего придется что-то изобретать с дивами дополнительно */
 
