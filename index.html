@@ -251,23 +251,32 @@
             <a href="#" class="btn">Напишите нам</a>
             <div class="big-map">
               <!-- Изображение сделать фоном -->
-              <img src="img/map-big.jpg">
-              <button class="btn-close"></button>
+              <div class="big-map-bg">
+                <img src="img/map-big.jpg">
+                <button class="btn-close"></button>
+              </div>
             </div>
             <div class="contacts-form">
-              <form action="post">
-                <div class="contacts-form-name">
-                  <label for="name">Ваше имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-                </div>
-                <div class="contacts-form-email">
-                  <label for="email">Ваш e-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="Для отправки ответа">
-                </div>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                <input type="submit" class="btn" value="Отправить">
+              <div class="contacts-form-bg">
+                <form action="post">
+                  <div class="contacts-form-name-email pos-flex">
+                    <div class="contacts-form-name">
+                      <label for="name">Ваше имя:</label><br>
+                      <input type="text" name="name" id="name" class="form-invalid" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="contacts-form-email">
+                      <label for="email">Ваш e-mail:</label><br>
+                      <input type="email" name="email" id="email" class="" placeholder="Для отправки ответа">
+                    </div>
+                  </div>
+                  <div class="contacts-form-text">
+                    <label for="message">Текст письма:</label><br>
+                    <textarea name="message" id="message" class="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    <input type="submit" class="btn-about" value="Отправить">
+                  </div>
+                </form>
                 <button class="btn-close"></button>
-              </form>
+              </div>
             </div>
           </section>
         </div>
