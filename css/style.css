@@ -274,7 +274,6 @@ h3{
 .categories-menu a:focus::after{
   opacity: 0.5;
 }
-/* фокусить пока не выходит. скорее всего придется что-то изобретать с дивами дополнительно */
 
 
 /* FEATURES */
@@ -284,8 +283,7 @@ h3{
   display: flex;
 }
 .features-nav{
-  box-sizing: content-box;
-  width: 277px;
+  width: 283px;
   height: 320px;
   border-right: 6px solid #000;
   margin-right: 117px;
@@ -295,7 +293,7 @@ h3{
 }
 .feature-content.show{
   display: block;
-  width: 460px;
+  width: 760px;
   padding-right: 300px;
 }
 .feature-content p{
@@ -352,6 +350,9 @@ h3{
 /* ABOUT AND CONTACTS */
 .about-and-contacts{
   display: flex;
+  justify-content: space-between;
+  height: 580px;
+  margin-bottom: 75px;
 }
 
 .btn-close{
@@ -374,7 +375,7 @@ h3{
 }
 
 .big-map, .contacts-form{
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -385,9 +386,9 @@ h3{
   background-color: rgba(0,0,0,0.5);
   z-index: 10;
 }
-.contacts-form{
+/* .contacts-form{
   display: none;
-}
+} */
 .contacts-form-bg{
   position: relative;
   width: 960px;
@@ -465,4 +466,41 @@ h3{
   position: relative;
   width: 960px;
   height: 559px;
+}
+
+.about-and-contacts section{
+  width: 560px;
+}
+.about-and-contacts section:before{
+  content: "";
+  display: table;
+  width: 80px;
+  border-top: 6px solid #000;
+}
+
+
+.about-and-contacts .btn{
+  width: 260px;
+  padding-top: 5px;
+}
+
+.about-and-contacts p,
+.about-and-contacts li{
+  font-family: OpenSans, Arial, sans-serif;
+  color: #464646;
+}
+
+/* FOOTER */
+
+.footer-wrapper{
+  width: 100%;
+  height: 323px;
+  background-color: #464646;
+}
+
+.main-footer{
+  justify-content: space-between;
+}
+.main-footer *{
+  color: #fff;
 }
