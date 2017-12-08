@@ -80,7 +80,24 @@
       <!-- Линию сделать через ::before -->
         <section class="slider">
           <h2 class="visually-hidden">Хиты продаж</h2>
-          <div class="slider-item show">
+
+          <div class="slider-nav-check">
+            <!-- <input type="radio" id="slide-1" name="slider-nav-checked" checked> -->
+            <!-- <label for="slide-1" class="slider-nav-check-1"></label> -->
+            <!-- <input type="radio" id="slide-2" name="slider-nav-checked"> -->
+            <!-- <label for="slide-2" class="slider-nav-check-2"></label> -->
+            <!-- <input type="radio" id="slide-3" name="slider-nav-checked"> -->
+            <!-- <label for="slide-3" class="slider-nav-check-3"></label> -->
+          </div>
+
+          <input type="radio" id="slide-1" name="slider-nav-checked" class="visually-hidden" checked>
+          <label for="slide-1" class="slider-nav-check-1"></label>
+          <input type="radio" id="slide-2" name="slider-nav-checked" class="visually-hidden">
+          <label for="slide-2" class="slider-nav-check-2"></label>
+          <input type="radio" id="slide-3" name="slider-nav-checked" class="visually-hidden">
+          <label for="slide-3" class="slider-nav-check-3"></label>
+
+          <div class="slider-item slider-item-1">
             <div class="slider-img">
               <img src="img/slider-1.png" class="slider-pic-1" width="400" alt="Slider picture">
             </div>
@@ -91,7 +108,9 @@
                 Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <a href="#" class="btn-about">Подробнее</a>
+              <div class="slider-nav pos-flex">
+                <a href="#" class="btn-about">Подробнее</a>
+              </div>
               <table class="slider-description-features">
                 <tr>
                   <td>8,5 м</td>
@@ -106,7 +125,7 @@
               </table>
             </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item slider-item-2">
             <div class="slider-img">
               <img src="img/slider-2.png" class="slider-pic-2" width="350" alt="Slider picture">
             </div>
@@ -128,7 +147,7 @@
               </table>
             </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item slider-item-3">
             <div class="slider-img">
               <img src="img/slider-3.png" class="slider-pic-3" width="530" alt="Slider picture">
             </div>
