@@ -18,19 +18,17 @@
             <li>
               <form action="get" class="user-menu-search">
                 <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти" class="btn-search">
+                <input type="submit" value="Найти" class="btn-search visually-hidden">
               </form>
             </li>
             <li>
-              <!-- <img src="img/decor/header-user.svg" alt="Пользователь"> -->
-              <a href="#" class="user-menu-enter"><b class="user-name">Валентин Петухов</b>Выйти</a>
+              <a href="#" class="catalog-user-name">Валентин Петухов</a>
+              <a href="#" class="user-menu-logout">Выйти</a>
             </li>
             <li>
-              <!-- <img src="img/decor/header-compare.svg" alt="Сравнить"> -->
               <a href="#" class="user-menu-compare">Сравнить</a>
             </li>
             <li>
-              <!-- <img src="img/decor/header-cart.svg" alt="Корзина"> -->
               <a href="#" class="user-menu-cart">Корзина</a>
             </li>
           </ul>
@@ -103,15 +101,15 @@
             <form action="get">
               <fieldset class="filter-price">
                 <span>Стоимость</span>
-                <!-- <div> -->
-                  <!-- <input type="range" name="price" id="price" min="0" max="10000" step="100"> -->
-                  <div class="price-range">
-                    <div class="price-range-selected"></div>
-                  </div>
-                <!-- </div> -->
+                <div class="price-range">
+                  <div class="price-range-selected"></div>
+                  <div class="price-min-selected"></div>
+                  <div class="price-max-selected"></div>
+                </div>
+                <span class="price-min">от 0</span>
+                <span class="price-max">до 5000</span>
+
               </fieldset>
-              <!-- <label for="filter-price">Стоимость</label>
-              <input type="range" name="price" id="price" min="0" max="10000" step="100"> -->
               <fieldset class="filter-color">
                 <span>Цвет</span>
                 <div>
@@ -160,8 +158,8 @@
                 <div class="result-show-img">
                   <img src="img/item-1.jpg" alt="Любительская селфи-палка">
                   <div class="result-show-buy visually-hidden">
-                    <button type="submit" class="btn-about">В корзину</button>
-                    <span>Добавить в сравнению</span>
+                    <a class="btn-about">В корзину</a>
+                    <a href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -173,8 +171,8 @@
                 <div class="result-show-img">
                   <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
                   <div class="result-show-buy visually-hidden">
-                    <button type="submit" class="btn-about">В корзину</button>
-                    <span>Добавить в сравнению</span>
+                    <a class="btn-about">В корзину</a>
+                    <a href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -186,8 +184,8 @@
                 <div class="result-show-img">
                   <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
                   <div class="result-show-buy visually-hidden">
-                    <button type="submit" class="btn-about">В корзину</button>
-                    <span>Добавить в сравнению</span>
+                    <a class="btn-about">В корзину</a>
+                    <a href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -199,8 +197,8 @@
                 <div class="result-show-img">
                   <img src="img/item-4.jpg" alt="Селфи-палка 'Следуй за мной'">
                   <div class="result-show-buy visually-hidden">
-                    <button type="submit" class="btn-about">В корзину</button>
-                    <span>Добавить в сравнению</span>
+                    <a class="btn-about">В корзину</a>
+                    <a href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">

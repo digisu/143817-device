@@ -147,7 +147,8 @@ button{
   background-repeat: no-repeat;
   background-position: center left;
 }
-.user-menu-enter{
+.user-menu-enter,
+.catalog-user-name{
   background-image: url('../img/decor/header-user.svg');
 }
 .user-menu-compare{
@@ -308,6 +309,7 @@ button{
   display: block;
   text-align: center;
   border: none;
+  border-radius: 0;
   width: 220px;
   height: 40px;
   background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
