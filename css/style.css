@@ -221,10 +221,12 @@ button{
 }
 
 .main-header a:hover,
+.main-header-catalog a:hover,
 .catalog-menu-open-modal:hover .catalog-menu-open-modal-trigger{
   color: rgba(0,0,0,0.6);
 }
-.main-header a:focus{
+.main-header a:focus,
+.main-header-catalog a:focus{
   color: rgba(0,0,0,0.3);
 }
 
