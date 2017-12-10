@@ -17,7 +17,7 @@
             <li>
               <form action="get" class="user-menu-search">
                 <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти" class="btn-search">
+                <input type="submit" value="Найти" class="btn-search visually-hidden">
               </form>
             </li>
             <li>
@@ -39,7 +39,7 @@
               <div class="catalog-modal">
                 <ul class="catalog-modal-menu">
                   <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
                 <ul class="catalog-modal-menu">
@@ -94,9 +94,7 @@
                 Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <div class="slider-nav pos-flex">
-                <a href="#" class="btn-about">Подробнее</a>
-              </div>
+              <a href="#" class="btn-about">Подробнее</a>
               <table class="slider-description-features">
                 <tr>
                   <td>8,5 м</td>
@@ -163,15 +161,15 @@
       <div class="container">
         <section class="categories">
           <h2 class="visually-hidden">Категории товаров</h2>
-          <ul class="categories-menu">
+          <ul class="categories-menu pos-flex">
             <li class="categories-menu-item">
               <a href="#">
-                <h3>Виртуальная<br>реальность</h3>
+                <h3>Виртуальная реальность</h3>
               </a>
             </li>
             <li class="categories-menu-item">
-              <a href="#">
-                <h3>Моноподы<br>для селфи</h3>
+              <a href="catalog.html">
+                <h3>Моноподы для селфи</h3>
               </a>
             </li>
             <li class="categories-menu-item">
@@ -232,8 +230,7 @@
             <div class="feature-content feature-content-3">
               <h2>Кредит</h2>
               <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br>
-                условия кредита. Выгодные для нашего банка, разумеется.
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </div>
           </section>
@@ -243,11 +240,11 @@
       <div class="container">
         <section class="vendors">
           <h2 class="visually-hidden">Основные поставщики</h2>
-          <ul class="vendors-list">
-            <li><img src="img/logo-1.png" alt="DJI"></li>
-            <li><img src="img/logo-2.png" alt="SP GADGETS"></li>
-            <li><img src="img/logo-3.png" alt="GoPro"></li>
-            <li><img src="img/logo-4.png" alt="VIVE"></li>
+          <ul class="vendors-list pos-flex">
+            <li><a href="#"><img src="img/logo-1.png" alt="Ди Джей Ай"></a></li>
+            <li><a href="#"><img src="img/logo-2.png" alt="Эс Пи Гаджетс"></a></li>
+            <li><a href="#"><img src="img/logo-3.png" alt="Гоу Про"></a></li>
+            <li><a href="#"><img src="img/logo-4.png" alt="Вайв"></a></li>
           </ul>
         </section>
       </div>
@@ -263,9 +260,9 @@
               Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
             </p>
             <ul class="delivery-list">
-              <li>Деловые Линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
+              <li><a href="#">Деловые Линии</a></li>
+              <li><a href="#">Автотрейдинг</a></li>
+              <li><a href="#">ЖелДорЭкспедиция</a></li>
             </ul>
             <a href="#" class="btn btn-about">Подробнее о нас</a>
           </section>
@@ -275,35 +272,35 @@
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
-            <a href="#" class="map"><img src="img/map.jpg" alt="Мы на карте"></a>
-            <a href="#" class="btn btn-about">Напишите нам</a>
-            <div class="big-map">
+            <a href="#big-map" class="map" id="map-btn-open"><img src="img/map.jpg" alt="Мы на карте"></a>
+            <a href="#form-btn-open" class="btn btn-about" id="form-btn-open">Напишите нам</a>
+            <div class="big-map" id="big-map">
               <!-- Изображение сделать фоном -->
               <div class="big-map-bg">
                 <img src="img/map-big.jpg" alt="Мы на карте - крупно">
-                <button class="btn-close"></button>
+                <button class="btn-close" id="map-btn-close"></button>
               </div>
             </div>
-            <div class="contacts-form">
+            <div class="contacts-form" id="contacts-form">
               <div class="contacts-form-bg">
                 <form action="post">
                   <div class="contacts-form-name-email pos-flex">
                     <div class="contacts-form-name">
-                      <label for="name">Ваше имя:</label><br>
+                      <label for="name">Ваше имя:</label>
                       <input type="text" name="name" id="name" class="form-invalid" placeholder="Представьтесь, пожалуйста">
                     </div>
                     <div class="contacts-form-email">
-                      <label for="email">Ваш e-mail:</label><br>
+                      <label for="email">Ваш e-mail:</label>
                       <input type="email" name="email" id="email" class="" placeholder="Для отправки ответа">
                     </div>
                   </div>
                   <div class="contacts-form-text">
-                    <label for="message">Текст письма:</label><br>
+                    <label for="message">Текст письма:</label>
                     <textarea name="message" id="message" class="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
                     <input type="submit" class="btn-about" value="Отправить">
                   </div>
                 </form>
-                <button class="btn-close"></button>
+                <button class="btn-close" id="form-btn-close"></button>
               </div>
             </div>
           </section>
@@ -349,5 +346,6 @@
       </div>
     </div>
 
+  <script src="script.js"></script>
   </body>
 </html>
