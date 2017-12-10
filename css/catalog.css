@@ -79,6 +79,7 @@
 
 .filter-header{
   padding-left: 60px;
+  align-items: center;
 }
 
 .filter form{
@@ -124,10 +125,14 @@
   background-repeat: no-repeat;
 }
 .price-min-selected{
-  left: -10px;;
+  left: -10px;
 }
 .price-max-selected{
   left: 109px;;
+}
+.price-min-selected:hover,
+.price-max-selected:hover{
+  cursor: pointer;
 }
 
 span.price-min,

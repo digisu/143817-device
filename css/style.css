@@ -53,18 +53,22 @@ button{
 
 /* HEADER */
 
-.main-header *{
+.main-header *,
+.main-header-catalog *{
   padding: 0;
   margin: 0;
 }
 
-.main-header{
-  height: 300px;
+.main-header,
+.main-header-catalog{
   background-color: #f7e296;
   margin-top: 40px;
   padding-left: 60px;
   padding-top: 30px;
   position: relative;
+}
+.main-header{
+  min-height: 300px;
 }
 
 .header-logo{
@@ -188,7 +192,7 @@ button{
 
 .catalog-modal{
   width: 1040px;
-  height: 165px;
+  min-height: 165px;
   position: absolute;
   bottom: 0;
   padding-top: 25px; /* выравнивал на глаз */
@@ -306,6 +310,7 @@ button{
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 3px;
   display: block;
   text-align: center;
   border: none;
@@ -468,7 +473,7 @@ h3{
 }
 .features-nav{
   width: 280px;
-  height: 319px;
+  min-height: 319px;
   border-right: 7px solid #000;
 }
 .features-nav ul{
@@ -673,7 +678,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 
 .contacts-form-text textarea{
   width: 760px;
-  height: 150px;
+  min-height: 150px;
   margin-bottom: 50px;
 }
 
@@ -687,7 +692,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   align-items: center;
   justify-content: center;
   width: 960px;
-  height: 559px;
+  min-height: 559px;
 }
 
 .about-and-contacts section{
@@ -744,7 +749,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 
 .footer-wrapper{
   width: 100%;
-  height: 323px;
+  min-height: 323px;
   background-color: #464646;
 }
 
@@ -804,8 +809,8 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   font-size: 1px;
   overflow: hidden;
   display: block;
-  height: 33px; /* Или лучше прописать отдельно высоту у элемента li */
-  width: 33px;
+  min-height: 33px;
+  min-width: 33px;
 }
 .footer-social li{
   margin-right: 25px;
@@ -814,7 +819,6 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   margin-right: 0;
 }
 
-/* При такой стилизации теряется смысл в элементах <a>. Они невидимы. Загонять span внутрь и ему задавать фоновую картинку? */
 .footer-social a{
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -860,8 +864,8 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   display: table;
   position: absolute;
   bottom: 9px;
-  width: 13px;
-  height: 13px;
+  min-width: 13px;
+  min-height: 13px;
   background-repeat: no-repeat;
 }
 .footer-user-menu li:first-child a::before{
@@ -887,8 +891,8 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   display: inline-block;
   background-image: url('../img/logo-html.svg');
   background-repeat: no-repeat;
-  width: 27px;
-  height: 35px;
+  min-width: 27px;
+  min-height: 35px;
   margin-top: 40px;
 }
 
@@ -937,3 +941,292 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 /*-------------------------------------------*/
 /*-------------------------------------------*/
 /*-------------------------------------------*/
+
+.user-name{
+  padding-right: 18px;
+}
+
+.main-header-catalog{
+  min-height: 185px;
+}
+
+.catalog-modal{
+  top: 135px;
+  left: 0;
+  width: 1160px;
+  padding-left: 60px;
+
+}
+.user-menu-logout{
+  opacity: 0.3;
+}
+
+/* BACKGROUND COLOR PALETTE */
+.catalog-wrapper-1{
+  width: 100%;
+  background: linear-gradient(90deg, #dcdcdc 0, #dcdcdc 50%, #ebebeb 50%);
+}
+.catalog-wrapper-2{
+  width: 100%;
+  background: linear-gradient(90deg, #eee 0, #eee 50%, #fff 50%);
+}
+
+.breadcrumbs a{
+  color: #cacaca;
+}
+.breadcrumbs a:hover{
+  color: #8d8d8d;
+}
+.breadcrumbs a:focus{
+  color: #eeeeee;
+}
+
+.filter-header,
+.filter{
+  min-width: 330px;
+}
+.filter-result-sorting{
+  background-color: #ebebeb;
+}
+.filter-result{
+  background-color: #fff;
+}
+
+/* CAT HEADER */
+.cat-page-header{
+  padding-left: 60px;
+
+}
+.breadcrumbs{
+  padding: 0;
+}
+.separator{
+  padding-right: 40px;
+  background-image: url('../img/decor/nav-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+}
+
+.result-show{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 74px;
+  margin-left: 74px;
+}
+
+/* FILTER */
+.catalog-wrapper-1 h3{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+.filter-header{
+  padding-left: 60px;
+  align-items: center;
+}
+
+.filter form{
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+.filter fieldset{
+  width: 200px;
+  border: none;
+  border-top: 2px solid #000;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-top: 15px;
+}
+.filter span{
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.price-range{
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background-color: #ccc;
+}
+.price-range-selected{
+  width:120px;
+  height: 2px;
+  background-color: #91c92f;
+}
+.price-min-selected,
+.price-max-selected{
+  position: absolute;
+  top: -11px;
+  content: "";
+  display: table;
+  min-width: 23px;
+  min-height: 23px;
+  background-image: url('../img/decor/filter-button.svg');
+  background-repeat: no-repeat;
+}
+.price-min-selected{
+  left: -10px;
+}
+.price-max-selected{
+  left: 109px;;
+}
+.price-min-selected:hover,
+.price-max-selected:hover{
+  cursor: pointer;
+}
+
+span.price-min,
+span.price-max{
+  margin-top: 5px;
+  margin-right: 55px;
+  font-size: 14px;
+  opacity: 0.3;
+  font-weight: normal;
+}
+
+.filter-color label,
+.filter-bluetooth label{
+  display: inline-block;
+  font-family: OpenSans, Arial, sans-serif;
+  padding-left: 40px;
+  margin-bottom: 14px;
+  background-repeat: no-repeat;
+}
+.filter-color label{
+  background-image: url('../img/decor/checkbox-off.svg');
+}
+.filter-color input:checked + label{
+  background-image: url('../img/decor/checkbox-on.svg');
+}
+.filter-bluetooth label{
+  background-image: url('../img/decor/radio-off.svg');
+}
+.filter-bluetooth input:checked + label{
+  background-image: url('../img/decor/radio-on.svg');
+}
+
+.filter input[type=submit]{
+  width: 200px;
+}
+
+
+/* SORTING */
+
+.filter-result-sorting{
+  align-items: center;
+  width: 830px;
+  padding-left: 74px;
+}
+.filter-result-sorting h3{
+  margin-right: 10px;
+}
+.sort-by a{
+  margin-right: 30px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.3;
+}
+.sort-by-active a{
+  opacity: 1;
+}
+.sort-dir{
+  margin-left: auto;
+  text-align: right;
+}
+.sort-dir a{
+  /* font-size: 1px; */
+  overflow: hidden;
+  color: rgba(0,0,0,0);
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 15px;
+}
+.sort-up{
+  background-image: url('../img/decor/icon-up-dir.svg');
+  opacity: 0.2;
+}
+.sort-down{
+  background-image: url('../img/decor/icon-down-dir.svg');
+}
+
+
+/* RESULT SHOW */
+.result-show-description{
+  justify-content: space-between;
+  line-height: 1.25;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.result-show-description b{
+  font-size: 18px;
+  width: 260px;
+}
+.result-show-description span{
+  font-size: 16px;
+}
+
+.result-show-img{
+  position: relative;
+}
+.result-show-buy{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+.result-show-img::after{
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 380px;
+  background-color: #eee;
+  opacity: 0.7;
+}
+
+.result-show-img:hover::after,
+.result-show-img:hover .result-show-buy{
+  display: block;
+}
+
+/* BOTTOM PAGINATION */
+
+.filter-result-pagination{
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  min-height: 70px;
+  padding: 0 30px;
+  background-color: #ebebeb;
+  margin-left: 74px;
+  margin-bottom: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.filter-result-pagination b a{
+  display: block;
+  min-height: 70px;
+  padding-top: 20px;
+}
+.filter-result-pagination-pages a{
+  font-weight: bold;
+  margin-right: 35px;
+  opacity: 0.3;
+}
+.filter-result-pagination-pages .filter-result-pagination-active{
+  opacity: 1;
+}
+
