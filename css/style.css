@@ -425,58 +425,104 @@ h3{
 
 /* FEATURES */
 
+.features-wrapper{
+  position: relative;
+  width: 100%;
+  height: 388px;
+}
+.features-wrapper::before{
+  content: "";
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 288px;
+  top: 100px;
+  background-color: #e5e5e5;
+  z-index: 0;
+}
+
+.features-container{
+  position: relative;
+}
 
 .features{
   display: flex;
 }
 .features-nav{
-  width: 283px;
-  height: 320px;
-  border-right: 6px solid #000;
-  margin-right: 117px;
+  width: 280px;
+  height: 319px;
+  border-right: 7px solid #000;
+}
+.features-nav ul{
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+}
+.features-nav li{
+  margin-bottom: 20px;
 }
 .feature-content{
   display: none;
+  background-repeat: no-repeat;
+  background-position: 560px 85px;
+  width: 760px;
+  padding-top: 30px;
+  padding-right: 300px;
+  margin-left: 120px;
 }
 .feature-content.show{
   display: block;
-  width: 760px;
-  padding-right: 300px;
 }
 .feature-content p{
   font-family: OpenSans, Arial, sans-serif;
 }
 .feature-content-1{
   background-image: url('../img/decor/services-delivery.svg');
-  background-repeat: no-repeat;
-  background-position: 560px 85px;
 }
 .feature-content-2{
   background-image: url('../img/decor/services-warranty.svg');
-  background-repeat: no-repeat;
-  background-position: 560px 85px;
 }
 .feature-content-3{
   background-image: url('../img/decor/services-credit.svg');
-  background-repeat: no-repeat;
-  background-position: 560px 85px;
 }
 .btn{
   cursor: pointer;
-  /* box-sizing: border-box; */
   border: none;
   padding-top: 1px;
+  /* padding-left: 25px; */
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   display: block;
-  text-align: center;
   width: 160px;
   height: 40px;
   background: linear-gradient(0,transparent 0, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 }
 
+.features-nav-list label{
+  width: 160px;
+  margin-right: 117px;
+  letter-spacing: 4px;
+}
+.features-nav-list label:hover{
+  background: #f0c52e;
+}
+
+input#feature-content-1:checked ~ .feature-content-1,
+input#feature-content-2:checked ~ .feature-content-2,
+input#feature-content-3:checked ~ .feature-content-3{
+  display: block;
+}
+input#feature-content-1:checked ~ nav label.feature-content-1-btn,
+input#feature-content-2:checked ~ nav label.feature-content-2-btn,
+input#feature-content-3:checked ~ nav label.feature-content-3-btn{
+  width: 277px;
+  margin-right: 0;
+  padding-right: 117px;
+  background: #000;
+  color: #f7e184;
+}
 
 /* VENDORS */
 
@@ -781,38 +827,3 @@ h3{
 /*-------------------------------------------*/
 /*-------------------------------------------*/
 /*-------------------------------------------*/
-
-/* BACKGROUND COLOR PALETTE */
-.catalog-wrapper-1{
-  width: 100%;
-  background: linear-gradient(90deg, #dcdcdc 0, #dcdcdc 50%, #ebebeb 50%);
-}
-.catalog-wrapper-2{
-  width: 100%;
-  background: linear-gradient(90deg, #eee 0, #eee 50%, #fff 50%);
-}
-
-.filter-header,
-.filter{
-  min-width: 330px;
-}
-.filter-result-sorting{
-  background-color: #ebebeb;
-}
-.filter-result{
-  background-color: #fff;
-}
-
-/* CAT HEADER */
-.cat-page-header{
-  padding-left: 60px;
-
-}
-.breadcrumbs{
-  padding: 0;
-}
-.separator{
-  display: inline-block;
-  width: 40px;
-  text-align: center;
-}

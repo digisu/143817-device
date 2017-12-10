@@ -1,0 +1,151 @@
+.user-name{
+  padding-right: 18px;
+}
+.main-header{
+  height: 185px;
+}
+.catalog-modal{
+  top: 135px;
+  left: 0;
+  width: 1160px;
+  padding-left: 60px;
+
+}
+
+/* BACKGROUND COLOR PALETTE */
+.catalog-wrapper-1{
+  width: 100%;
+  background: linear-gradient(90deg, #dcdcdc 0, #dcdcdc 50%, #ebebeb 50%);
+}
+.catalog-wrapper-2{
+  width: 100%;
+  background: linear-gradient(90deg, #eee 0, #eee 50%, #fff 50%);
+}
+
+.breadcrumbs a{
+  color: #cacaca;
+}
+.breadcrumbs a:hover{
+  color: #8d8d8d;
+}
+.breadcrumbs a:focus{
+  color: #eeeeee;
+}
+
+.filter-header,
+.filter{
+  min-width: 330px;
+}
+.filter-result-sorting{
+  background-color: #ebebeb;
+}
+.filter-result{
+  background-color: #fff;
+}
+
+/* CAT HEADER */
+.cat-page-header{
+  padding-left: 60px;
+
+}
+.breadcrumbs{
+  padding: 0;
+}
+.separator{
+  padding-right: 40px;
+  background-image: url('../img/decor/nav-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+}
+
+.result-show{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 74px;
+  margin-left: 74px;
+}
+
+/* FILTER */
+.filter-header{
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+
+.filter form{
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+.filter fieldset{
+  width: 200px;
+  border: none;
+  border-top: 2px solid #000;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-top: 15px;
+}
+.filter span{
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.price-range{
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background-color: #ccc;
+}
+.price-range-selected{
+  width:120px;
+  height: 2px;
+  background-color: #91c92f;
+}
+.price-range::before,
+.price-range::after{
+  position: absolute;
+  top: -11px;
+  content: "";
+  display: table;
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/decor/filter-button.svg');
+  background-repeat: no-repeat;
+}
+.price-range::before{
+  left: -10px;;
+}
+.price-range::after{
+  left: 109px;;
+}
+
+.filter-color label,
+.filter-bluetooth label{
+  display: inline-block;
+  font-family: OpenSans, Arial, sans-serif;
+  padding-left: 40px;
+  margin-bottom: 14px;
+  background-repeat: no-repeat;
+}
+.filter-color label{
+  background-image: url('../img/decor/checkbox-off.svg');
+}
+.filter-color input:checked + label{
+  background-image: url('../img/decor/checkbox-on.svg');
+}
+.filter-bluetooth label{
+  background-image: url('../img/decor/radio-off.svg');
+}
+.filter-bluetooth input:checked + label{
+  background-image: url('../img/decor/radio-on.svg');
+}
+
+.filter input[type=submit]{
+  width: 200px;
+}
+
+
+

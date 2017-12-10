@@ -5,10 +5,12 @@
     <title>Device</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
   </head>
   <body>
+  <!-- <b class="user-name">Валентин Петухов</b> -->
 
-    <div class="container">
+  <div class="container">
       <header class="main-header">
         <a class="header-logo" href="#">DEVICE</a>
         <nav class="main-nav">
@@ -21,8 +23,7 @@
             </li>
             <li>
               <!-- <img src="img/decor/header-user.svg" alt="Пользователь"> -->
-              <b class="user-name">Валентин Петухов</b>
-              <a href="#" class="user-menu-enter">Выйти</a>
+              <a href="#" class="user-menu-enter"><b class="user-name">Валентин Петухов</b>Выйти</a>
             </li>
             <li>
               <!-- <img src="img/decor/header-compare.svg" alt="Сравнить"> -->
@@ -35,26 +36,26 @@
           </ul>
           <ul class="catalog-menu">
             <li class="catalog-menu-open-modal">
-              <a href="#">Каталог товаров</a>
+              <a href="#" class="catalog-menu-open-modal-trigger">Каталог товаров</a>
+              <div class="catalog-modal">
+                <ul class="catalog-modal-menu">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-modal-menu">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-modal-menu">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
             </li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <div class="catalog-modal">
-            <ul class="catalog-modal-menu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="catalog-modal-menu">
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="catalog-modal-menu">
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </div>
         </nav>
       </header>
     </div>
@@ -65,10 +66,8 @@
         <div class="cat-page-header">
             <h2>Моноподы для селфи</h2>
             <ul class="breadcrumbs pos-flex">
-              <li><a href="#">Главная</a></li>
-              <li><b class="separator">></b></li>
-              <li><a href="#">Каталог товаров</a></li>
-              <li><b class="separator">></b></li>
+              <li class="separator"><a href="#">Главная</a></li>
+              <li class="separator"><a href="#">Каталог товаров</a></li>
               <li><a>Моноподы для селфи</a></li>
             </ul>
         </div>
@@ -103,50 +102,53 @@
             <!-- Здесь был filter-header -->
             <form action="get">
               <fieldset class="filter-price">
-                <legend>Стоимость</legend>
-                <div>
-                  <input type="range" name="price" id="price" min="0" max="10000" step="100">
-                </div>
+                <span>Стоимость</span>
+                <!-- <div> -->
+                  <!-- <input type="range" name="price" id="price" min="0" max="10000" step="100"> -->
+                  <div class="price-range">
+                    <div class="price-range-selected"></div>
+                  </div>
+                <!-- </div> -->
               </fieldset>
               <!-- <label for="filter-price">Стоимость</label>
               <input type="range" name="price" id="price" min="0" max="10000" step="100"> -->
               <fieldset class="filter-color">
-                <legend>Цвет</legend>
+                <span>Цвет</span>
                 <div>
-                  <input type="checkbox" name="color" id="color-black" value="black">
+                  <input type="checkbox" name="color" id="color-black" value="black" class="visually-hidden" checked>
                   <label for="color-black">Черный</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-white" value="white">
+                  <input type="checkbox" name="color" id="color-white" value="white" class="visually-hidden">
                   <label for="color-white">Белый</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-blue" value="blue">
+                  <input type="checkbox" name="color" id="color-blue" value="blue" class="visually-hidden" checked>
                   <label for="color-blue">Синий</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-red" value="red">
+                  <input type="checkbox" name="color" id="color-red" value="red" class="visually-hidden" checked>
                   <label for="color-red">Красный</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-pink" value="pink">
+                  <input type="checkbox" name="color" id="color-pink" value="pink" class="visually-hidden">
                   <label for="color-pink">Розовый</label>
                 </div>
               </fieldset>
 
               <fieldset class="filter-bluetooth">
-                <legend>Bluetooth</legend>
+                <span>Bluetooth</span>
                 <div>
-                  <input type="checkbox" name="bluetooth" id="bluetooth-yes" value="1">
+                  <input type="radio" name="bluetooth" id="bluetooth-yes" value="1" class="visually-hidden" checked>
                   <label for="bluetooth-yes">Есть</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="bluetooth" id="bluetooth-no" value="0">
+                  <input type="radio" name="bluetooth" id="bluetooth-no" value="0" class="visually-hidden">
                   <label for="bluetooth-no">Нет</label>
                 </div>
               </fieldset>
 
-              <input type="submit" class="btn" value="Показать">
+              <input type="submit" class="btn-about" value="Показать">
             </form>
           </section>
 
