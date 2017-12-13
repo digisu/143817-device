@@ -7,6 +7,12 @@
 }
 
 @font-face {
+  font-family: Gilroy Light;
+  src: url(../fonts/gilroylight.woff2) format("woff2"),
+      url(../fonts/gilroylight.woff) format("woff");
+}
+
+@font-face {
   font-weight: normal;
   font-family: "OpenSans";
   font-style: normal;
@@ -370,6 +376,9 @@ a.user-menu-cart{
 .slider-description-features{
   margin-top: 56px;
   margin-left: -2px;
+}
+.slider-description-features tr:first-child{
+  font-family: Gilroy Light, Arial, sans-serif;
 }
 .slider-description-features tr:first-child{
   font-size: 36px;
@@ -1317,10 +1326,11 @@ span.price-min{
 }
 .result-show-description span{
   margin-top: 1px;
-  letter-spacing: 0.4px;
+  /* letter-spacing: -0.2px; */
+  font-family: Gilroy Light, Arial, Helvetica, sans-serif;
 }
 .result-show li:not(:first-child) span{
-  margin-right: 1px;
+  /* margin-right: 1px; */
 }
 
 .result-show-img{
