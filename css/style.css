@@ -1,10 +1,3 @@
-/* @font-face{
-  font-family: 'Gilroy';
-  src: url(../fonts/gilroy-extrabold-webfont.woff2) format(woff2),
-        url(../fonts/gilroy-extrabold-webfont.woff) format(woff),
-        url(../fonts/Gilroyextrabold.ttf) format(ttf);
-} */
-
 @font-face {
   font-family: Gilroy;
   src: url(../fonts/gilroyextrabold.woff2) format("woff2"),
