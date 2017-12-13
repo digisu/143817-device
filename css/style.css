@@ -1,7 +1,7 @@
 @font-face{
   font-family: Gilroy;
   src: url(../fonts/gilroy-extrabold-webfont.woff2) format(woff2),
-  src: url(../fonts/Gilroyextrabold.ttf) format(ttf);
+        url(../fonts/Gilroyextrabold.ttf) format(ttf);
 }
 
 body{
