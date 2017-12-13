@@ -702,6 +702,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 }
 .contacts-form-name-email input:focus,
 .contacts-form-text textarea:focus{
+  padding: 18px;
   background-color: #fff;
   border: 2px solid #f7e296;
 }
@@ -724,7 +725,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 
 .contacts-form-text textarea{
   width: 760px;
-  min-height: 150px;
+  height: 150px;
   margin-bottom: 50px;
 }
 
@@ -738,7 +739,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   align-items: center;
   justify-content: center;
   width: 960px;
-  min-height: 559px;
+  min-height: 560px;
 }
 
 .about-and-contacts section{
