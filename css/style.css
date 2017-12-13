@@ -6,6 +6,24 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff") format("woff"),
+  url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: lighter;
+  font-family: "OpenSans Light";
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff") format("woff"),
+  url("../fonts/opensanslight.woff2") format("woff2");
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -773,7 +791,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 .about-us p{
   margin-bottom: 30px;
   letter-spacing: -0.2px;
-  padding-right: 30px;
+  padding-right: 31px;
 }
 .about-us p:last-of-type{
   letter-spacing: -0.48px;
@@ -838,10 +856,9 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 }
 
 .footer-address{
-  font-family: OpenSans, Arial, sans-serif;
+  font-family: OpenSans Light, Arial, sans-serif;
   font-weight: 300;
   padding-top: 5px;
-  letter-spacing: -0.25px;
 }
 
 .main-footer-middle{
